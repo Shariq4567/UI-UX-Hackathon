@@ -3,7 +3,7 @@ import ReviewStars from "@/Images/review-stars.svg"
 import GreenTick from "@/Images/green-tick.svg"
 
 
-export default function ReviewCard({ Name, Review }) {
+export default function ReviewCard({ Name, Review }: { Name: string, Review: string }) {
     return (
         <div className='min-w-[320px] w-[400px] p-[25px] flex flex-col gap-[12px] border-[1px] border-gray-300 rounded-[20px]'>
             <Image src={ReviewStars} alt="Review Stars" />

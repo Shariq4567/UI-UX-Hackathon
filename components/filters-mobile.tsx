@@ -3,8 +3,6 @@ import Image from "next/image"
 import Cross from "@/Images/black-cross.svg"
 import RightArrow from "@/Images/right-arrow-head.svg"
 import UpArrow from "@/Images/up-arrow-head.svg"
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
 import Tick from "@/Images/tick.svg"
 
 export default function FiltersMobile({ className }: { className: string }) {
@@ -56,7 +54,7 @@ export default function FiltersMobile({ className }: { className: string }) {
                 <Image src={UpArrow} alt="Up arrow" />
             </div>
             <div className="flex flex-col gap-2">
-                <RangeSlider />
+                <div className="w-full h-[10px] bg-gray-300 rounded-full"></div>
                 <div className="flex justify-evenly">
                     <p className="font-sans font-medium text-[14px]">$50</p>
                     <p className="font-sans font-medium text-[14px]">$200</p>

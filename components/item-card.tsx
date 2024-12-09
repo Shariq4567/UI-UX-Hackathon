@@ -7,7 +7,7 @@ import ThreeStarRating from "@/Images/3-star.svg"
 import Link from "next/link"
 
 export default function ItemCard({ ItemImage, ProductTitle, Rating, InitialPrice, DiscountedPrice, DiscountPercent }: {
-    ItemImage: StaticImageData, ProductTitle: string, Rating: number, InitialPrice: number, DiscountedPrice: number, DiscountPercent: number
+    ItemImage: StaticImageData, ProductTitle: string, Rating: number, InitialPrice: number, DiscountedPrice?: number, DiscountPercent?: number
 }) {
 
     function handleRating() {
